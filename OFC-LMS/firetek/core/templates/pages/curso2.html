@@ -1,0 +1,551 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cursos.css'%}">
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/estiloCurso2.css'%}">
+    <title>Sistemas da Informação</title>
+    <title>Analise & Desenvolvimento</title>
+</head>
+
+<body>
+    <header class="jumbotron-new">
+        <nav class="container-fluid navbar navbar-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class=" navbar-brand" href="#"><span class="fire">FIRETEK</span> <span class="spc">- Graduação</span></a>
+                <div class="container">
+                    <div class="collapse navbar-collapse topnav">
+                        <ul class="nav navbar-nav">
+                            <li class=" active dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="cursos.html"><b>Cursos</b><span
+                                    class="caret" ></span></a> 
+                               
+                                <ul class="dropdown-menu">
+                                    <li><a href="curso1">Analise & desenvolvimento</a></li>
+                                    <li><a href="curso2">Siatemas da Informação</a></li>
+                                </ul>
+                                
+                            </li>
+                            <li><a href="vestibulares"><b>Vestibular</b></a></li>
+                            <li><a href="index"><b>A FIretek</b></a></li>
+                            <li><a href="#ds"><b></b></a></li>
+                            <li><a href="#dt"><b></b></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="ins">INSCREVA-SE</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+    </header>
+    
+     <div id="id01" class=" container modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="{% static 'img/av2.png'%}" alt="Avatar" class="avatar">
+            </div>
+    
+            <div class="container-fluid">
+                <label for="uname"><b>Usuario</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                <button type="submit">Login</button>
+                <br>
+                <span class="psw">Esqueceu sua <a href="#"> senha?</a></span>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembrar
+    
+                </label>
+            </div>
+    
+            <div>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    
+            </div>
+        </form>
+    </div>
+
+    <section class="margin-top-25">
+        <div class="fig _title text-center section_title">
+            <img class="img-fig" src="{% static 'img/tecnologia.jpg'%}" alt="">
+            <div class="legenda">
+                <h1 class="_title">Sistemas de informação</h1>
+                <h2 class="_title">Business Agility & Computação Cognitiva</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-md-8">
+                <h2 class="_title-c text-left section_title">O Curso</h2>
+                <hr class="hr2">
+                <br>
+                <div class="quebra">
+                    <p>A Graduação de Sistemas de Informação prepara o aluno para ser um profissional transformador do mercado, desenvolvendo soluções inovadoras e criativas na construção e utilização de Sistemas de Informaçã</p><br>
+                    <p>O aluno aprenderá os conceitos teóricos e usos práticos da área, irá acompanhar as principais inovações tecnológicas do mercado e habilitar a sua capacidade empreendedora.</p><br>
+                    <p>O objetivo é formar profissionais capazes de atuar na área de Tecnologia da Informação, criando práticas tecnológicas para determinar o fluxo de informações com o desenvolvimento de software e no gerenciamento de sistemas informatizados. Ao final do 2.º ano, os alunos já terão o diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas.</p>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2">
+                <div>
+                    <h3 class="_title-22 "><b>BACHARELADO</b></h3>
+                </div>
+                <div class="round2">
+                    <p class="desc"><b>Periodo:</b></p>
+                    <h5 class="_title-2 section_title-shadow">Matutino</h5>
+                    <p class="desc"> 08:00 ás 11:40</p>
+                    <h5 class="_title-2 section_title-shadow"><b>Por Apenas:</b></h5>
+                    <p class="section_title section_title-shadow">R$ 582,00</p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                    <div>
+                        <h3 class="_title-22 ">Duração: 8 Semestres</h3>
+                    </div>
+                    
+                <div class="round2">
+                    <p class="desc"><b>Periodo:</b></p>
+                    <h5 class="_title-2 section_title-shadow">Noturno</h5>
+                    <p class="desc"> 19:00 ás 22:40</p>
+                    <h5 class="_title-2 section_title-shadow"><b>Por Apenas:</b></h5>
+                    <p class="section_title section_title-shadow">R$ 788,40</p> 
+                    
+                </div>
+            </div>
+    </section>
+    <section class="margin-top-50">
+        <div class="container">
+            <div class="col-md-6">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">1º Semestre</a></li>
+                    <li><a data-toggle="tab" href="#menu1">2º Semestre</a></li>
+                    <li><a data-toggle="tab" href="#menu2">3º Semestre</a></li>
+                    <li><a data-toggle="tab" href="#menu3">4º Semestre</a><br></li>
+                    <li><a data-toggle="tab" href="#menu4">5º Semestre</a></li>
+                    <li><a data-toggle="tab" href="#menu5">6º Semestre</a></li>
+                    <li><a data-toggle="tab" href="#menu6">7º Semestre</a></li>
+                    <li><a data-toggle="tab" href="#menu7">8º Semestre</a></li>
+                </ul>
+        
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <table class='table'>
+                            <thead >
+                                <tr>
+                                    <th class="_title-2">1º Semestre</th>
+                                    <th class="_title-2">Carga Horaria</th>
+                                
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Comunicação e expressão </td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Fundamentos de Banco de Dados</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Introdução a Internet das Coisas</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Linguaguem de Programação I</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Linguaguem de Programação </td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Matemática aplicada</td>
+                                    <td>80 horas</td>
+                                </tr>
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>480 horas</td>
+                                </tr>
+                            </tfoot>
+                    
+                        </table>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th class="_title-22">2º Semestre</th>
+                                    <th class="_title-22">Carga Horaria</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ambiente de Desenvolvimento e Operação  </td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Engenharia de Software</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Gestão de Projetos</td>
+                                    <td>40 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Libras</td>
+                                    <td>40 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Linguagem SQL</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Linguaguem de Programação II</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Sociedade e Sustentabilidade</td>
+                                    <td>40 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Tecnologia Web</td>
+                                    <td>80 horas</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>520 horas</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="_title-22">3º Semestre</th>
+                                    <th class="_title-22">Carga Horaria</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Análise e Modelagem de Sistemas</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Desenvolvimento de Aplicações Distribuidas</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Interface Homen-Computador</td>
+                                    <td>40 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Modelagem de Processos de Negocios</td>
+                                    <td>40 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>OPE - Oficina de Projetos Empresa 1</td>
+                                    <td>80 horas</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>440 horas</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="_title-22">4º Semestre</th>
+                                    <th class="_title-22">Carga Horaria</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Arquitetura e Projeto de Sistemas </td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Desenvolvimento para Dispositivos Móveis</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Desenvolvimento para Internet das Coisas - IOT</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Legislação e Ética</td>
+                                    <td>40 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>OPE 2 - Oficina Projeto de Empesa 2</td>
+                                    <td>80 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Qualidade de Software</td>
+                                    <td>80 horas</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>440 horas</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div id="menu4" class="tab-pane fade">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="_title-22">5º Semestre</th>
+                                        <th class="_title-22">Carga Horaria</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Business Agility</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Desenvolvimento de Sistemas da Informação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Startup e Inovação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teoria da Computação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>320 horas</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div id="menu5" class="tab-pane fade">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="_title-22">6º Semestre</th>
+                                        <th class="_title-22">Carga Horaria</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Análise de Viabilidade de Projetos</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Análise Exploratória de Dados</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gestão de Projetos de Inovação</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Integração e Desenvolvimento de Sistemas</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>320 horas</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!-------------------------------->
+                        <div id="menu6" class="tab-pane fade">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="_title-22">7º Semestre</th>
+                                        <th class="_title-22">Carga Horaria</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Business Intelligence</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gestão de Infraestrutura de TI</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Segurança e Auditoria de Sistemas</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trabalho de Conclusão de Curso 1 - TCC1</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>320 horas</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!--------------------------->
+                        <div id="menu7" class="tab-pane fade">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="_title-22">8º Semestre</th>
+                                        <th class="_title-22">Carga Horaria</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Computação Cognitiva</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Governança de TI</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sistemas Integrados de Gestão</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trabalho de Conclusão de Curso 2 -TCC2</td>
+                                        <td>80 horas</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>320 horas</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <section>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="_title-c text-left section_title">Mercado de trabalho</h3>
+                        <hr class="hr3">
+                        <div class="quebra">
+                            <br />
+                            <p>O mercado continua aquecido e está em expansão devido ao crescente acesso das pessoas à banda larga no País e fora dele.</p><br>
+                            <p>O profissional desta área pode atuar em qualquer tipo de empresa de quase todos os setores, de bancos e organizações de saúde a empresas públicas e de comércio eletrônico. Alguns cargos que a graduação pode gerar são: Analista de Sistemas, Administrador de Dados, Gerente de Sistemas e Processos de Gerente de TI.</p><br>
+                            <p>Uma das áreas mais em alta é a de Big Data, voltada ao levantamento do perfil de um público-alvo a partir de informações publicadas na internet. Outro segmento que se fortalece é o de educação a distância. A maior demanda está nos grandes centros, que concentram os maiores desenvolvedores de software.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <section class="thumbnail">
+                            <img  class="img-thumbnail" style="margin-top:35px;"src=".././img/si.jpg" alt="">
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <br>
+    <footer class="footer2 container">
+            <section class="">
+                <div class="clear">
+                    <div class="ribbon"></div>
+                </div>
+                <h2><a class="fire" href="#">FIRETEK</a></h2>
+                <div class="row">
+                    <section class="circle col-md-4">
+                        <h3 class="_title-3 margin-bottom-25">Siga-nos</h3>
+                        <ul class="inline">
+                            <li><a class="" href="" title="FanPage Facebook" target="_blank">
+                                    <i style="font-size:24px" class="fire fa">&#xf082;</i></i></a></li>
+                            <li><a class="icon-bg" href="https://www.instagram.com/facimpacta/" title="Instagram" target="_blank"><i
+                                        class=" fire fa fa-instagram" style="font-size:24px"></i></a></li>
+                            <li><a class="icon-bg" href="https://www.linkedin.com/edu/faculdade-impacta-tecnologia-161006"
+                                    title="Linkedin" target="_blank"><i class="fire fa fa-linkedin" style="font-size:24px"></i></a></li>
+                            <li><a class="icon-bg" href="https://twitter.com/facimpacta" title="Twitter" target="_blank"><i
+                                        class="fire fa fa-twitter" style="font-size:24px"></i></a></li>
+                            <li><a class="icon-bg" href=" title=" Youtube" target="_blank"><i class="fire fa fa-youtube-play"
+                                        style="font-size:24px"></i></a></li>
+                        </ul>
+                        <p class="margin-top-50"></p>
+                        <p class="text-uppercase small">RUG7UP 2018.</p>
+                        <p class="small">Todos os direitos reservados.</p>
+                    </section>
+                    <section class="circle col-md-4">
+                        <h3 class="_title-3  margin-bottom-25">Contatos</h3>
+                        <ul class="quebra2">
+                            <li><b>Comercial:</b></li>
+                            <li>Tel: 11 3254-8300</li>
+                            <li><b>Secretaria</b></li>
+                            <li>Tel: 11 5593-5344</li><br>
+                            <li>Unidade - Master II </li>
+                            <li>Avenida Itaguera, 1521 - Itaquera</li>
+                            <li>São Paulo / SP</li>
+                        </ul>
+                    </section>
+                    <section class="circle col-md-4">
+                        <h3 class="_title-3 margin-bottom-25">Atendimento</h3>
+                        <ul class="quebra2">
+                            <li><b>Secretaria da Graduação</b></li>
+                            <li>De segunda a sexta - das 9h às 21h</li>
+                            <li>Sábado - das 9h às 13h</li><br>
+                            <li><b>Secretaria de Pós-Graduação</b></li>
+                            <li>De segunda a sexta - das 13h às 21h</li>
+                            <li>Sábado - das 9h às 13h</li><br>
+                            <li><b>Ouvidoria</b></li>
+                            <li>De segunda a sexta - das 9h às 18h</li>
+                            <li>Telefone: (11) 5593-5370</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+    </footer>
+</body>
+</html>
