@@ -9,7 +9,7 @@ urlpatterns = [
     url (r'^usr/', views.usr, name='usr'),
     url (r'^login/', views.login, name='login'),
     url (r'^table/', views.table, name='table'),
-    url (r'^cadasto/', views.cadastro, name='cadastro'),
+    url (r'^cadastro/', views.cadastro, name='cadastro'),
     url (r'^calendar/', views.calendar, name='calendario'),
    
 ]
