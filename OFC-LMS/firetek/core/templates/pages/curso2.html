@@ -33,22 +33,23 @@
                     <div class="collapse navbar-collapse topnav">
                         <ul class="nav navbar-nav">
                             <li class=" active dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="cursos.html"><b>Cursos</b><span
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="../cursos"><b>Cursos</b><span
                                     class="caret" ></span></a> 
                                
                                 <ul class="dropdown-menu">
-                                    <li><a href="curso1">Analise & desenvolvimento</a></li>
-                                    <li><a href="curso2">Siatemas da Informação</a></li>
+                                    <li><a href="../curso1">Analise & desenvolvimento</a></li>
+                                    <li><a href="../curso2">Siatemas da Informação</a></li>
                                 </ul>
                                 
                             </li>
                             <li><a href="vestibulares"><b>Vestibular</b></a></li>
-                            <li><a href="index"><b>A FIretek</b></a></li>
+                            <li><a href="../"><b>A FIretek</b></a></li>
                             <li><a href="#ds"><b></b></a></li>
                             <li><a href="#dt"><b></b></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#"><span class="ins">INSCREVA-SE</span></a></li>
+                            <li><a  onclick="document.getElementById('id01').style.display='block'"href="#"><span class="">Login</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +58,7 @@
         <br>
     </header>
     
-     <div id="id01" class=" container modal">
+    <div id="id01" class=" container modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
@@ -396,7 +397,7 @@
                                 </tfoot>
                             </table>
                         </div>
-                        <!-------------------------------->
+                        
                         <div id="menu6" class="tab-pane fade">
                             <table class="table">
                                 <thead>
@@ -431,7 +432,7 @@
                                 </tfoot>
                             </table>
                         </div>
-                        <!--------------------------->
+                       
                         <div id="menu7" class="tab-pane fade">
                             <table class="table">
                                 <thead>
@@ -485,7 +486,7 @@
                     </div>
                     <div class="col-md-4">
                         <section class="thumbnail">
-                            <img  class="img-thumbnail" style="margin-top:35px;"src=".././img/si.jpg" alt="">
+                            <img  class="img-thumbnail" style="margin-top:35px;"src="{% static 'img/si.jpg'%}" alt="">
                         </section>
                     </div>
                 </div>
@@ -548,4 +549,14 @@
             </section>
     </footer>
 </body>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </html>
