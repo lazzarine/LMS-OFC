@@ -12,8 +12,14 @@ def curso2(request):
 def cadastro(request):
     return render(request,'pages/cadastro.html')
     
-def vestibular(request):
-    return render(request,'pages/vestibular.html')
-
 def login(request):
     return render(request,'pages/login.html')
+
+def usr(request):
+    return render(request,'pages/usr.html')
+
+def table(request):
+    return render(request,'pages/table.html')
+
+def calendar(request):
+    return render(request,'pages/calendar.html')
