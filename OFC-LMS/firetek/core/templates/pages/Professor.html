@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{% static 'css/bootstrap-slate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/rug-app.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery.noty.css' %}" rel='stylesheet' >
+    <link href="{% static 'components/chosen/chosen.min.css' %}" rel='stylesheet'>
+    <link href="{% static 'components/colorbox/example3/colorbox.css' %}" rel='stylesheet'>
+    <link href="{% static 'css/elfinder.min.css' %}" rel='stylesheet'>
+    <link href="{% static 'css/elfinder.theme.css' %}" rel='stylesheet'>
+    <script src="{% static 'components/jquery/jquery.min.js' %}"></script>
+    <title>Professor</title>
+</head>
+<body>
+    <div class="navbar navbar-relative-top" role="navigation">
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animate flip">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="btn-group pull-right">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-user"></i><span class="hiden-sm hidden-xs">Usuario</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
