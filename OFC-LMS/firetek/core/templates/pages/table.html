@@ -20,7 +20,6 @@
 <body>
     <!-- topbar starts -->
 <div class=" navbar  navbar-fixed-top" role="navigation">
-
     <div class=" navbar-inner ">
         <button type="button" class="navbar-toggle pull-left animated flip">
             <span class="sr-only"></span>
@@ -38,9 +37,7 @@
                 <li class="divider"></li>
                 <li><a href="../login">Sair</a></li>
             </ul>
-
         </div>
-
     </div>
 </div>
 <!-- topbar fim -->
@@ -51,7 +48,7 @@
             <div class="sidebar-nav">
                 <div class="nav-canvas">
                     <div class="nav-sm nav nav-stacked">
-
+                       
                     </div>
                     <ul class="nav nav-pills nav-stacked main-menu">
                         <div class="imgcontainer">
@@ -127,32 +124,30 @@
                     <div class="control-group">
                             <label class="control-label" for="selectError2"></label>
                         <div class="controls">
-                            <select data-placeholder="Semestre-Disciplina" id="selectError2" data-rel="chosen">
-                                <option value=""></option>
+                            <select data-placeholder="Selecione uma Disciplina" id="selectError2" data-rel="chosen">
+                                <option value="Primeiro Semestre"></option>
                                 <optgroup label="1º Semestre">
-                                    <option>Logica de Programação</option>
-                                    <option>Linguagem de Programção</option>
-                                    <option>Banco de dados</option>
-                                    <option>Matematica Aplicada</option>
-                                    <option>I.O.T</option>
-                                    <option>Comunicação e Expressão (EAD)</option>
+                                    <option>ADS 1A Manhã</option>
+                                    <option>ADS 1B Manhã</option>
+                                    <option>ADS 1C Noite</option>
+                                    <option>ADS 1D Noite</option>
+                                    <option>ADS 1E Noite</option>
                                 </optgroup>
                                 <optgroup label="2º Semestre">
-                                    <option>Linguagem de Programação II</option>
-                                    <option>Linguagem SQL</option>
-                                    <option>TecWeb</option>
-                                    <option>DevOps</option>
-                                    <option>Engenharia de Software</option>
-                                    <option>Libras (EAD)</option>
-                                    <option>Gestão de Projetos(EAD)</option>
+                                    <option>ADS 2A Manhã</option>
+                                    <option>ADS 2B Manhã</option>
+                                    <option>ADS 2C Noite</option>
+                                    <option>ADS 2D Noite</option>
+                                    <option>ADS 2E Noite</option>
                                 </optgroup>
-                                <optgroup label="3º Semestre">
-                                    <option>Análise e Projeto de Sistemas</option>
-                                    <option>Banco de Dados</option>
-                                    <option>Programação Web</option>
-                                    <option>Segurança e Auditoria de Sistemas</option>
+                                <optgroup label="1º Semestre">
+                                    <option>SI 1A Manhã</option>
+                                    <option>SI 1B Manhã</option>
+                                    <option>SI 1C Noite</option>
+                                    <option>SI 1D Noite</option>
+                                    <option>SI 1E Noite</option>
                                 </optgroup>
-                                <optgroup label="4º Semestre">
+                                <optgroup label="2º Semestre">
                                     <option>Legislação e Empreendoriso de Etica</option>
                                     <option>Redes</option>
                                     <option>Qualidade e Usuabilidade de Software</option>
@@ -187,8 +182,9 @@
                         </tr>
                     </thead>
                     <tbody>
+                        {% for aluno in aluno %}
                         <tr>
-                            <td>David R</td>
+                            <td>{{ aluno.nome }}</td>
                             <td class="center">2012/01/01</td>
                             <td class="center">??</td>
                             <td class="center">
@@ -209,72 +205,7 @@
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>Chris Jack</td>
-                            <td class="center">2000/01/01</td>
-                            <td class="center">???</td>
-                            <td class="center">
-                                <span class="label-success label label-default">Entregue</span>
-                            </td>
-                            <td class="center">
-                                <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    Ver
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Apagar
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>David R</td>
-                            <td class="center">2012/01/01</td>
-                            <td class="center">??</td>
-                            <td class="center">
-                                <span class="label-success label label-default">Entregue</span>
-                            </td>
-                            <td class="center">
-                                <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    Ver
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Apagar
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Chris Jack</td>
-                            <td class="center">2000/01/01</td>
-                            <td class="center">???</td>
-                            <td class="center">
-                                <span class="label-success label label-default">Entregue</span>
-                            </td>
-                            <td class="center">
-                                <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    Ver
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Apagar
-                                </a>
-                            </td>
-                        </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>

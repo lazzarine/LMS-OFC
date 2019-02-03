@@ -18,8 +18,14 @@ class Disciplina(models.Model):
     percentual_teorico = models.DecimalField(max_digits=13, decimal_places=2)
     coordenador = models.ForeignKey(Coordenador, on_delete=models.PROTECT)
 
+    def __str__(self):
+        return self.nome
+
 class Curso(models.Model):
     nome = models.TextField(max_length=255, unique=True)
+
+    def __str__(self):
+        return self.nome
 
 class DisciplinaOfertada(models.Model):
     dt_inicio = models.DateField()
@@ -45,3 +51,6 @@ class SolicitacaoMatricula(models.Model):
     aluno = models.ForeignKey(Aluno, on_delete=models.PROTECT)
     disciplina = models.ForeignKey(Disciplina, on_delete=models.PROTECT)
     coordenador = models.ForeignKey(Coordenador, on_delete=models.PROTECT)
+
+    def __str__(self):
+        return self.status

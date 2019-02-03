@@ -9,6 +9,9 @@ class Usuario(models.Model):
     login = models.TextField(max_length=20, unique=True)
     senha = models.TextField(max_length=20)
 
+    def __str__(self):
+        return self.nome
+
 class Coordenador(Usuario):
     pass
 
@@ -16,5 +19,11 @@ class Aluno(Usuario):
     ra = models.IntegerField()
     foto = models.TextField(max_length=255)
 
+    def __str__(self):
+        return self.nome
+
 class Professor(Usuario):
     apelido = models.TextField(max_length=255)
+
+    def __str__(self):
+        return self.apelido

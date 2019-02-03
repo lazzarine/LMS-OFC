@@ -10,6 +10,9 @@ class Atividade(models.Model):
     extras = models.TextField(max_length=255)
     professor = models.ForeignKey(Professor, on_delete=models.PROTECT)
 
+    def __str__(self):
+        return self.titulo
+
 class AtividadeVinculada(models.Model):
     status = models.IntegerField()
     rotulo = models.TextField(max_length=255)
@@ -39,3 +42,6 @@ class Mensagem(models.Model):
     resposta = models.TextField(max_length=1000)
     aluno = models.ForeignKey(Aluno, on_delete=models.PROTECT)
     professor = models.ForeignKey(Professor, on_delete=models.PROTECT)
+
+    def __str__(self):
+        return self.assunto
