@@ -5,7 +5,7 @@ from core.views import *
 from accounts.views import * 
 
 urlpatterns = [
-  url(r'^admin/', admin.site.urls),
-  url(r'^core/', include('core.urls')),
-  url(r'^accounts/', include('accounts.urls')),
+  path('admin/', admin.site.urls),
+  path('core/', include('core.urls')),
+  path('accounts/', include('accounts.urls')),
 ]

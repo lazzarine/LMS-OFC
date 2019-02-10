@@ -1,6 +1,6 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from core.models import Usuario, Aluno, Professor, Coordenador
+from core.models import *
 
 def index(request):
     return render(request,'pages/index.html')
@@ -20,6 +20,7 @@ def usr(request):
 def table(request):
     #Armazena na variavel aluno todos os objetos da tabela de Alunos
     aluno = Aluno.objects.all()
+    disciplina = Disciplina.objects.all()
 
     #Armazena na variavel template_name o template (table.html)
     template_name = 'pages/table.html'
@@ -27,7 +28,7 @@ def table(request):
     #Esse não entendi muito bem, é o dicionario que vai ser passado como paramentro da 
     #função render abaixo
     context = {
-        'aluno': aluno
+        'aluno': aluno, 'disciplina': disciplina
     }
     return render(request,'pages/table.html', context)
 
@@ -52,7 +53,16 @@ def contatoProfessores(request):
     }
     return render(request,'pages/contatoProfessores.html', context)
 
-
-
 def professor(request):
     return render(request, 'pages/Professor.html')
+
+def notasFaltas(request):
+    disciplina = Disciplina.objects.all()
+    
+    template_name = 'pages/notasFaltas.html'
+
+    context = {
+        'disciplina': disciplina
+    }
+
+    return render(request, 'pages/notasFaltas.html', context)

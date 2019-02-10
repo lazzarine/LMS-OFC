@@ -14,3 +14,4 @@ admin.site.register(Atividade)
 admin.site.register(AtividadeVinculada)
 admin.site.register(EntregaAtividade)
 admin.site.register(Mensagem)
+

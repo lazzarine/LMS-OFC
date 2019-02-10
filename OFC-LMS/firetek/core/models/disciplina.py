@@ -27,6 +27,10 @@ class Curso(models.Model):
     def __str__(self):
         return self.nome
 
+class Turma(models.Model):
+    nome = models.TextField(max_length=255, unique=True)
+    curso = models.ForeignKey(Curso, on_delete=models.PROTECT)
+
 class DisciplinaOfertada(models.Model):
     dt_inicio = models.DateField()
     dt_fim = models.DateField()
