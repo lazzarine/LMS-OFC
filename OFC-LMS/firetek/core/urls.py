@@ -1,15 +1,17 @@
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
     
-    url (r'^$', views.index, name='index'),
-    url (r'^curso1/', views.curso1, name='curso1'),
-    url (r'^curso2/', views.curso2, name='curso2'),
-    url (r'^usr/', views.usr, name='usr'),
-    url (r'^login/', views.login, name='login'),
-    url (r'^table/', views.table, name='table'),
-    url (r'^cadastro/', views.cadastro, name='cadastro'),
-    url (r'^calendar/', views.calendar, name='calendario'),
-   
+    path('', views.index, name='index'),
+    path('curso1/', views.curso1, name='curos1'),
+    path('curso2/', views.curso2, name='curos2'),
+    path('usr/', views.usr, name='usr'),
+    path('login/', views.login, name='login'),
+    path('table/', views.table, name='table'),
+    path('cadastro/', views.cadastro, name='cadastro'),
+    path('calendario/', views.calendario, name='calendario'),
+    path('contatoProfessores/', views.contatoProfessores, name='contatoProfessores'),
+    path('professor/', views.professor, name='professor'),
+    path('notasFaltas/', views.notasFaltas, name='notasFaltas'),
 ]
